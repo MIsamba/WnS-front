@@ -25,7 +25,7 @@ function HomeScreen() {
                        :
                     
                         <Row>
-                            {profiles.map(profile => (
+                            {this.state.profiles.map(profile => (
                                 <Col key={profile._id} sm={12} md={6} lg={4} xl={3}>
                                     <Profile profile={profile} />
                                 </Col>
